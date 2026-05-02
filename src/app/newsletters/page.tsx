@@ -1,4 +1,4 @@
-import { Box, Button, Container, SimpleGrid } from '@mantine/core';
+import { Box, Container } from '@mantine/core';
 import styles from "./styles.module.scss";
 import * as Users from "../../mocks/user";
 import { NEWSLETTER } from '@/types/newsletter';

@@ -20,7 +20,7 @@ const Newsletters: FC<Props> = ({ title, newsletters, user }) => {
             <h2 className={styles.h2}>{title}</h2>
             <SimpleGrid type="container" cols={{ base: 1, [MOBILE_BREAKPOINT]: 3 }}>
                 {newsletters.length > 0 && newsletters.map((newsletter: NEWSLETTER) => 
-                    <Box className={styles.newsletter}>
+                    <Box key={newsletter.title} className={styles.newsletter}>
                         <Box className={[styles.image, merriweather.className].join(" ")}>
                             {newsletter.title}
                         </Box>
