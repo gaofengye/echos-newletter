@@ -1,9 +1,9 @@
-##How to start the project
+# How to start the project
 
 Run `npm install` then `npm run dev`
 The homepage should be displayed and you can click on the link to go to "Newsletters" page
 
-##Code structure
+# Code structure
 
 The server component has been added in the newsletters/ folder of app/
 And the client component of newsletter if in components/ folder
