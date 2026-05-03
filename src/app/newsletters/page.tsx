@@ -17,7 +17,7 @@ export default async function Page() {
         .replace(/;$/, "");
     const NEWSLETTER_ITEMS: Array<NEWSLETTER> = Function(`"use strict"; return (${arrayString})`)();
 
-    return <Container size={CONTAINER_MAX_WIDTH} className={[styles.container, (true ? styles.desktopContainer : "")].join(" ")}>
+    return <Container size={CONTAINER_MAX_WIDTH} className={styles.container}>
         <Box className={styles.header}>
             <h1 className={styles.h1}>Newsletters</h1>
             <div className={styles.description}>
