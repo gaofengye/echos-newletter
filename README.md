@@ -1,5 +1,6 @@
 # How to start the project
 
+Run the project in Ubuntu
 Run `npm install` then `npm run dev`
 The homepage should be displayed and you can click on the link to go to "Newsletters" page
 
