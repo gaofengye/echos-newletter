@@ -10,7 +10,7 @@ const CURRENT_USER = Users.USER_WITH_MULTIPLE_SUBSCRIPTION
 const CONTAINER_MAX_WIDTH = 970;
 
 export default async function Page() {
-    const dataTsCode = await (await fetch("file:///home/gao/Documents/echos-newletter/src/mocks/newsletters.ts")).text();
+    const dataTsCode = await (await fetch(`file:///${__dirname.split("echos-newletter")[0]}echos-newletter/src/mocks/newsletters.ts`)).text();
     const arrayString = dataTsCode
         .replace("export const NEWSLETTER_ITEMS =", "")
         .trim()
